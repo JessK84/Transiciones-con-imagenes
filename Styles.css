@@ -1,0 +1,150 @@
+body {
+    width: 100%;
+    background-color: #D6C2B0;
+    margin: 0px auto;
+}
+.title {
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'News Cycle', sans-serif;
+}
+h1,
+.photo {
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: rgb(26, 23, 23);
+    font-size: 50px;    
+    line-height: 20px;
+}
+h2 {
+    line-height: 15px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: rgb(26, 23, 23);
+}
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.container-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+.box-pic {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+}
+.cactus,
+.img-three-bis {
+    width: 320px;
+    height: 320px;
+    margin: 5px;
+    overflow: hidden;
+}
+.img-three-bis {
+    position: absolute;
+    bottom: 350px;
+    right: 340px;
+    opacity: 0.6;
+}
+.text-two, 
+.text-three {
+   width: 304px;
+   background-color: #483635;
+   position: absolute;
+   left: 15px;
+   bottom: 20;
+   opacity: 0;
+   font-family: 'Niramit', sans-serif;;
+   font-size: 20px;
+   text-align: center;
+   padding: 4px 8px;
+   color: white;
+}
+.text-one {
+    position: absolute;
+    left: 70px;
+    bottom: 0px;
+    font-family: 'Pacifico', cursive;
+    color: #483635;
+    font-size: 28px;
+    font-weight: 100;
+    opacity: 0;
+}
+.box-one {
+    width: 316px;
+    height: 316px;
+    margin: 5px;
+    background-color: none;
+    border: 1.5px solid #483635;
+    position: absolute;
+    bottom: 16px;
+    left: 6px;
+    opacity: 0;
+    background-color:483635 ;
+}
+
+.footer {
+    padding: 0px 20px;
+    background-color: rgb(199, 175, 152);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    box-shadow: 6px 0px 3px rgb(26 31 31);
+}
+
+.footer-link-tittle {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;;;
+}
+
+.footer-link {
+    list-style: none;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+li{
+    padding-left: 40px;
+}
+
+/*-----------------------------------------------------------------------
+--------------------------------------------------------------------------
+                              TRANSITION BUTTON:HOVER
+------------------------------------------------------------------------*/
+
+.img-one:hover figcaption {
+    bottom: 24px;
+    opacity: 100;
+    transition: .8s;
+}
+.img-two:hover figcaption  {
+    opacity: 100;
+    bottom: 40px;
+    transition-duration: .6s;
+}
+.img-two:hover .box-one {
+    opacity: 100;
+    transform: scale(.9);
+    transition-duration: .6s;
+} 
+.img-three:hover .img-three-bis {
+    bottom: 20px;
+    right: 10px;
+    transition-duration: .6s;
+    opacity: .4;
+}
