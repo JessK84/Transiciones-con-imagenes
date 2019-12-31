@@ -44,23 +44,34 @@ h2 {
     cursor: pointer;
     position: relative;
 }
-.cactus,
-.img-three-bis {
+.cactus, 
+.box-two, 
+.box-three {
     width: 320px;
     height: 320px;
     margin: 5px;
-    overflow: hidden;
+    position: relative;
 }
-.img-three-bis {
+.box-two {
     position: absolute;
-    bottom: 350px;
-    right: 340px;
-    opacity: 0.6;
+    bottom: 345px;
+    left: -310px;
+    background-color: blanchedalmond;
+    opacity: .4;
+}
+.box-three {
+    position: absolute;
+    top: 0px;
+    left: -390px;
+    background-color: #5a2838;
+    opacity: .8;
+    text-align: center;
 }
 .text-two, 
-.text-three {
+.text-three, 
+.text-four {
    width: 304px;
-   background-color: #483635;
+   background-color: #d89e8b;
    position: absolute;
    left: 15px;
    bottom: 20;
@@ -70,23 +81,56 @@ h2 {
    text-align: center;
    padding: 4px 8px;
    color: white;
+   font-family: 'Open Sans Condensed', sans-serif;
+   letter-spacing: 4px;
+}
+.text-two {
+    background-color: #e05360;
+    font-family: 'Shadows Into Light', cursive;
+    width: 260px;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 30px;
+    font-weight: 200;
+    bottom: -120px;
+}
+.text-three {
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 25px;
+    padding: 10px 10px;
+    margin: 0px;
+    width: 240px;
+    text-align: end;
+}
+.add-to-car {
+    margin: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #EEEEEE;
+    padding-top: 120px;
+    opacity: 1;
 }
 .text-one {
     position: absolute;
     left: 70px;
     bottom: 0px;
     font-family: 'Pacifico', cursive;
-    color: #483635;
+    color: #4673ab;
     font-size: 28px;
     font-weight: 100;
     opacity: 0;
+}
+.text-four{
+    background-color: #f5f2ee;
+    color:#5a2838 ;
 }
 .box-one {
     width: 316px;
     height: 316px;
     margin: 5px;
     background-color: none;
-    border: 1.5px solid #483635;
+    border: 1.5px solid #4673ab;
     position: absolute;
     bottom: 16px;
     left: 6px;
@@ -128,23 +172,45 @@ li{
 ------------------------------------------------------------------------*/
 
 .img-one:hover figcaption {
-    bottom: 24px;
-    opacity: 100;
+    transform: translateY(-280px) ;
+    opacity: 1;
     transition: .8s;
 }
+.img-one:hover {
+    opacity: .6;
+}
 .img-two:hover figcaption  {
-    opacity: 100;
+    opacity: 1;
     bottom: 40px;
     transition-duration: .6s;
 }
 .img-two:hover .box-one {
-    opacity: 100;
+    opacity: 1;
     transform: scale(.9);
     transition-duration: .6s;
 } 
-.img-three:hover .img-three-bis {
-    bottom: 20px;
-    right: 10px;
-    transition-duration: .6s;
-    opacity: .4;
+.img-two:hover {
+    opacity: .7;
+}
+.img-three:hover .box-two {
+    transform: translateX(320px) translateY(325px) rotate(180deg);
+    transition-duration: .2s;
+    opacity: .7;
+}
+.img-three:hover figcaption {
+    opacity: .9;
+    bottom: 35px;
+    transition: .2s .3s;
+}
+
+.img-four:hover .box-three {
+    bottom: 0px;
+    left: 10px;
+    transition-duration: .3s;
+}
+
+.img-four:hover figcaption {
+    opacity: 1;
+    bottom: 80px;
+    transition: .2s .3s;
 }
